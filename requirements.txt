@@ -1,0 +1,17 @@
+jupyterlab
+sqlalchemy
+pandas
+xlsxwriter
+backtesting
+jupyter_bokeh
+multiprocess
+# TA-Lib check Dockerfile parameters, use pandas-ta
+pandas-ta
+python-decouple
+matplotlib
+plotly
+mplfinance
+
+elena @ git+https://github.com/Pasta-fantasia/elena.git@v2.2.2
+elena-basic @ git+https://github.com/Pasta-fantasia/elena-basics.git@v0.0.5
+elena-notifications-telegram @ git+https://github.com/Pasta-fantasia/elena-notifications-telegram.git@v0.0.1

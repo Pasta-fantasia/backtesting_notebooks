@@ -1,2 +1,3 @@
-# backtesting_notebooks
-Backtesting Notebooks
+# Backtesting Notebooks
+
+Strategies simulation documentation 
