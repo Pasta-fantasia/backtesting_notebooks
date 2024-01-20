@@ -32,6 +32,6 @@ Interactive simulation graph: [bt_interactive_plot.html](bt_interactive_plot.htm
 
 ### Files
 
-- full: [heatmap.md](heatmap.md), [heatmap.xlsx](heatmap.xlsx) 
+- full: [heatmap.md](heatmap_df.md), [heatmap.xlsx](heatmap_df.xlsx) 
 - trades: [trades.md](trades.md) [trades.xlsx](trades.xlsx)
 - equity: [equity_curve.md](equity_curve.md) [equity_curve.xlsx](equity_curve.xlsx)
