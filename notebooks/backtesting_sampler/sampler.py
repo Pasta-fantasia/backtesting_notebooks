@@ -17,6 +17,17 @@ from handle_data.read_data import load_candles
 from backtesting import Backtest
 
 
+def process_heatmap(heatmap,take_slice=0):
+    hm = heatmap.reset_index()
+    target_opt = hm.columns[-1]
+    if take_slice>0:
+        opt_slice_rows = int(hm.shape[0]/10)
+        hm_opt_slice = hm.sort_values(target_opt, ascending=False)[:opt_slice_rows]
+        return hm_opt_slice
+    else:
+        return hm.sort_values(target_opt, ascending=False)
+
+
 def opt_asset_factor(stats):
     trades = stats._trades
     if len(trades)>0:
@@ -80,12 +91,7 @@ class MultiSampleSimulator:
 
         self.file_name_instance_id = self.class_to_simulate.__name__ + '_' + datetime.now().strftime('%Y-%m-%d_%H%M')
         
-    def process_heatmap(self, heat_map):
-        hm = heat_map.reset_index()
-        target_opt = hm.columns[-1]
-        opt_slice_rows = int(hm.shape[0]/10)
-        hm_opt_slice = hm.sort_values(target_opt, ascending=False)[:opt_slice_rows]
-        return hm_opt_slice
+
 
     def run_simulation_samples(self, fast_test_samples=0, full_cycle_samples=1):
         start_time = time.time()

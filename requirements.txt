@@ -11,6 +11,7 @@ python-decouple
 matplotlib
 plotly
 mplfinance
+tabulate
 
 elena @ git+https://github.com/Pasta-fantasia/elena.git@v2.2.2
 elena-basic @ git+https://github.com/Pasta-fantasia/elena-basics.git@v0.0.5
