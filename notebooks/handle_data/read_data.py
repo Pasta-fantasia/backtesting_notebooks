@@ -5,11 +5,11 @@ import pandas as pd
 last_read_filename = ""
 last_read_candles = None
 
-
 def get_dir_file_names(symbol, timeframe, exchange_name):
     if timeframe == '1m':
         timeframe = '1min'
-    directory = '../data/' + symbol.replace('/', '-') + '/' + timeframe
+    base_data_dir = os.environ['DATA_DIR'] + '/'
+    directory = base_data_dir + symbol.replace('/', '-') + '/' + timeframe
     filename = directory + '/' + symbol.replace('/', '-') + '_' + timeframe + '_' + exchange_name + '.pickle'
     return directory, filename
 

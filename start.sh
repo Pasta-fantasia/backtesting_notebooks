@@ -10,6 +10,7 @@ docker run  --name backtesting-notebook \
         --rm \
         -v ${notebooks_dir}:/home/jovyan/work \
         -v ${data_dir}:/home/jovyan/work/data \
+        -e DATA_DIR=/home/jovyan/work/data \
         -p 8888:8888 \
         elena/backtesting_notebooks
 
