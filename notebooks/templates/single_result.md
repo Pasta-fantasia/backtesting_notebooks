@@ -1,11 +1,13 @@
 # Class: {{ str_strategy_name }} - {{ experiment_nickname }} - {{ symbol }} - {{ exchange }}
 
 - Experiment nickname: {{ experiment_nickname }} 
+- Experiment timestamp: {{ timestamp }} 
 - Symbol: {{ symbol }}
 - Exchange: {{ exchange }}
 - Start date: {{ start_date }}
 - End date: {{ end_date }}
 - Timeframe: {{ timeframe }}
+- Duration: {{ duration }}s
 
 ## Optimized parameters
 {% for parameter in parameters %}
@@ -35,3 +37,5 @@ Interactive simulation graph: [bt_interactive_plot.html](bt_interactive_plot.htm
 - full: [heatmap.md](heatmap_df.md), [heatmap.xlsx](heatmap_df.xlsx) 
 - trades: [trades.md](trades.md) [trades.xlsx](trades.xlsx)
 - equity: [equity_curve.md](equity_curve.md) [equity_curve.xlsx](equity_curve.xlsx)
+
+
